@@ -1,0 +1,126 @@
+<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/form.css">
+
+<h1>Pesquisar um cidadão</h1>
+<form>
+    <label>
+        <input type="radio" value="pesquisar" name="tp_action" />
+        <span>pesquisar</span>
+    </label>
+    <label>
+        <input type="radio" value="cadastrar" name="tp_action" />
+        <span>cadastrar</span>
+    </label>
+</form>
+<form id="form-cidadao">
+    <div>
+        <label>limit de registros</label>
+        <input type="number" name="limit" value="100"  placeholder="limit"/>
+    </div>
+    <div class="form-group">
+        <input type="text" name="nome" placeholder="Nome" />
+        <select name="nome_tq">
+            <option value="OR">Contém</option>
+            <option value="AND">É</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="text" name="n_bi" placeholder="Bilhete de identidade" />
+    </div>
+    <div class="form-group">
+        <input type="date" name="data_nascimento" placeholder="Data nascimento" />
+        <select name="data_n_tq">
+            <option selected value="FULL">Data</option>
+            <option value="DAY">Dia</option>
+            <option value="MONTH">Mês</option>
+            <option value="YEAR">Ano</option>
+            <option value="DAY_MONTH">Dia e mês</option>
+            <option value="DAY_YEAR">Dia e ano</option>
+            <option value="MONTH_YEAR">Mês e ano</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="text" name="nacionalidade" placeholder="Nacionalidade" />
+    </div>
+    <div class="form-group">
+        <input type="text" name="nome_pai" placeholder="Nome do pai" />
+        <select name="nome_p_tq">
+            <option value="OR">Contém</option>
+            <option value="AND">É</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="text" name="nome_mae" placeholder="Nome da Mae" />
+        <select name="nome_m_tq">
+            <option value="OR">Contém</option>
+            <option value="AND">É</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select name="sexo">
+            <option value="" selected>Sexo</option>
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <select name="estado_civil">
+            <option value="" selected>Estado civil</option>
+            <option value="solteiro">Solteiro</option>
+            <option value="casado">Casado</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="number" name="altura" placeholder="Altura" />
+    </div>
+    <div class="form-group">
+        <input type="text" name="residencia" placeholder="Residencia" />
+    </div>
+    <div class="form-group">
+        <input type="text" name="provincia" placeholder="Provincia" />
+    </div>
+    <div class="form-group">
+        <input type="date" name="data_bi_emissao" placeholder="Data de emissão do B.I" />
+        <select name="data_bie_tq">
+            <option selected value="FULL">Data</option>
+            <option value="DAY">Dia</option>
+            <option value="MONTH">Mês</option>
+            <option value="YEAR">Ano</option>
+            <option value="DAY_MONTH">Dia e mês</option>
+            <option value="DAY_YEAR">Dia e ano</option>
+            <option value="MONTH_YEAR">Mês e ano</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="date" name="data_bi_validade" placeholder="Data de validade do B.I" />
+        <select name="data_biv_tq">
+            <option selected value="FULL">Data</option>
+            <option value="DAY">Dia</option>
+            <option value="MONTH">Mês</option>
+            <option value="YEAR">Ano</option>
+            <option value="DAY_MONTH">Dia e mês</option>
+            <option value="DAY_YEAR">Dia e ano</option>
+            <option value="MONTH_YEAR">Mês e ano</option>
+        </select>
+    </div>
+</form>
+<table border=1 class="table">
+
+    <thead>
+        <th>nome</th>
+        <th>n_bi</th>
+        <th>data_nascimento</th>
+        <th>nacionalidade</th>
+        <th>sexo</th>
+        <th>estado_civil</th>
+        <th>altura</th>
+        <th>residencia</th>
+        <th>provincia</th>
+        <th>data_bi_validade</th>
+        <th>data_bi_emissao</th>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+<script type="module" src="/js/index.js"></script>
