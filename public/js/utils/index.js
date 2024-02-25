@@ -20,11 +20,9 @@ export const createDelayDispatch = function (callback, delay) {
 export const generateObjectQuery = function (form) {
     const object = {}
     for (let field of form.elements) {
-
         if (field.value.trim() != ""){
-            // if(field.name == "nacionalidade") console.log(field.value);
             object[field.name] = field.value
         }
     }
-    return object
+    return object;
 }
